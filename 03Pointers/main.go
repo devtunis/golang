@@ -55,6 +55,14 @@ func main() {
 	sort.Float64s(floatList)
 	p(floatList)
 
+	var courses = []string{"reactjs", "javascript", "swift", "python", "ruby"}
+	p(courses)
+	// delte things
+	var index int = 2
+	courses = append(courses[:index], courses[index+1:]...)
+
+	p(courses)
+
 }
 
 // sort.Ints() → for int
