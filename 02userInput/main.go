@@ -17,7 +17,7 @@ func main() {
 		now.Minute(),
 		now.Second(),
 	)
-
+	time.Sleep(10000 * time.Millisecond)
 	p(date)
 
 }
