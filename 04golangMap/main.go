@@ -17,4 +17,13 @@ func main() {
 		fmt.Println(key, value)
 	}
 
+	// nested map
+	Rooms := make(map[string]map[string]int)
+	Rooms["room1"] = map[string]int{"players": 5}
+	Rooms["room2"] = map[string]int{"players": 15, "palyer": 19}
+	Rooms["room3"] = map[string]int{"player2": 20}
+
+	fmt.Println(Rooms)
+	fmt.Println(Rooms["room1"])
+
 }
